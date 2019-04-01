@@ -75,6 +75,22 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
+  Widget _searchFunction() {
+    String stext = "";
+    if (isRun) {
+      stext = "Searching... " + (items.length.toString() + " item(s) found! Tap on an item to browse");
+    } else {
+      stext = "Tap on search button to search";
+    }
+    return Text(
+      stext,
+      textAlign: TextAlign.left,
+      style: TextStyle(color: Colors.grey
+          //color: items.length > 0 && isRun ? Colors.green : Colors.grey
+          ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -93,8 +109,11 @@ class _MyAppState extends State<MyApp> {
         drawer: appDrawer(),
         body: Container(
             child: Column(
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("Searching...!"),
+            SizedBox(height: 15),
+            _searchFunction(),
+            SizedBox(height: 15),
             Expanded(
               child: ListView.builder(
                 itemBuilder: (BuildContext context, i) => InkWell(
@@ -172,11 +191,9 @@ Widget appDrawer() {
         ),
         ListTile(
           leading: Icon(Icons.exit_to_app, color: Colors.blueGrey),
-          title: Text(
-            "Exit",
-            style:
-                TextStyle(fontWeight: FontWeight.w700, color: Colors.blueGrey),
-          ),
+          title: Text("Exit",
+              style: TextStyle(
+                  fontWeight: FontWeight.w700, color: Colors.blueGrey)),
           onTap: () {
             print("Quitting sharebox");
             exit(0);
