@@ -1,7 +1,7 @@
 # ShareBox Connect
-Discover mDNS services within a LAN, written in flutter for android and ios devices.
+Discover mDNS/DNS-SD services within a LAN, written in flutter for android and ios devices.
 
-- [mDNS Plugin](https://pub.dartlang.org/packages/mdns2)
+- [mmDNS/DNS-SD Plugin](https://pub.dartlang.org/packages/mdns2)
 - [URL Launcher](https://pub.dartlang.org/packages/url_launcher)
 
 ## Getting Started
@@ -23,5 +23,9 @@ cd ShareBox
 ```bash
 flutter run
 ```
+
+> Note! Make sure you have installed flutter and all dependencies needed correctly
+
+License to be updated soon!
 
 Thank you!
