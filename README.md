@@ -26,6 +26,12 @@ flutter run
 
 > Note! Make sure you have installed flutter and all dependencies needed correctly
 
+<<<<<<< HEAD
 License to be updated soon!
 
 Thank you!
+=======
+Thank you!
+
+> License to be updated soon!
+>>>>>>> 63f8877cc5e396de43501d67583b9a37ce02dfe5
