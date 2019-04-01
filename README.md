@@ -24,4 +24,8 @@ cd ShareBox
 flutter run
 ```
 
+> Note! Make sure you have installed flutter and all dependencies needed correctly
+
 Thank you!
+
+> License to be updated soon!
